@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
+
+.metricCard {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.metricIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metricIcon.primary {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-700);
+}
+
+.metricIcon.success {
+  background-color: var(--color-success-100);
+  color: var(--color-success-700);
+}
+
+.metricIcon.warning {
+  background-color: var(--color-warning-100);
+  color: var(--color-warning-700);
+}
+
+.metricIcon.danger {
+  background-color: var(--color-danger-100);
+  color: var(--color-danger-700);
+}
+
+.metricInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.metricLabel {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  font-weight: var(--font-weight-medium);
+}
+
+.metricValue {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-main);
+  margin-top: var(--space-1);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.recentList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.recentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-surface);
+}
+
+.recentLeft {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.recentInvNumber {
+  font-weight: var(--font-weight-medium);
+}
+
+.recentCustomer {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
+.recentRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-1);
+}
+
+.recentAmount {
+  font-weight: var(--font-weight-bold);
+}
