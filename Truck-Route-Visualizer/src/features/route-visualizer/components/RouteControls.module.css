@@ -1,0 +1,92 @@
+.controlsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+.primaryActions {
+  display: flex;
+  gap: var(--space-2);
+}
+.speedControls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--bg-primary);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+}
+.speedLabel {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-right: var(--space-2);
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: var(--text-sm);
+  transition: all 0.2s ease;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.btnPrimary {
+  background-color: var(--accent-primary);
+  color: white;
+}
+.btnPrimary:hover:not(:disabled) {
+  background-color: var(--accent-primary-hover);
+}
+.btnWarning {
+  background-color: var(--warning);
+  color: white;
+}
+.btnOutline {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-strong);
+}
+.btnOutline:hover:not(:disabled) {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+.speedBtn {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+.speedBtnActive {
+  background-color: var(--accent-primary);
+  color: white;
+}
+.speedBtn:hover:not(.speedBtnActive) {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+}
+@media (max-width: 768px) {
+  .controlsContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .primaryActions {
+    justify-content: center;
+  }
+  .speedControls {
+    justify-content: center;
+  }
+}

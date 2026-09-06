@@ -1,0 +1,67 @@
+.timelineContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+.label {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.timeline {
+  display: flex;
+  align-items: center;
+}
+.stopNode {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: var(--bg-surface);
+}
+.completedIcon {
+  color: var(--success);
+}
+.pendingIcon {
+  color: var(--border-strong);
+}
+.stopName {
+  margin-left: var(--space-1);
+  margin-right: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.stopNameCompleted {
+  color: var(--text-primary);
+}
+.line {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  right: -10px;
+  height: 2px;
+  background-color: var(--border-subtle);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+.lineCompleted {
+  background-color: var(--success);
+}
+@media (max-width: 640px) {
+  .timelineContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timeline {
+    flex-wrap: wrap;
+    gap: var(--space-2) 0;
+  }
+}
