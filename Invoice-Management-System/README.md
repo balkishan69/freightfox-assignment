@@ -1,5 +1,7 @@
 # Invoice Management System
 
+# Live Link: https://invoice-management-system-opal.vercel.app
+
 A complete, polished frontend application for an Invoice Management System, built as a technical assignment for FreightFox.
 
 This repository focuses on strong frontend engineering fundamentals, maintainability, and user experience, avoiding excessive abstraction while demonstrating realistic state management and architectural patterns.
