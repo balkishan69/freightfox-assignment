@@ -1,5 +1,7 @@
 # Logistics Truck Route Visualizer
 
+Live Link: https://truck-route-visualizer-lac.vercel.app
+
 A frontend application simulating a truck moving through a series of delivery locations on a geographic route. This assignment demonstrates strong React architecture, scalable state management, and native SVG path manipulation.
 
 ## Assignment Features Implemented
