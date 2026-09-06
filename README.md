@@ -6,6 +6,8 @@ This repository contains two complete frontend engineering assignments submitted
 
 ## 1. Invoice Management System
 
+Live Link: https://invoice-management-system-opal.vercel.app
+
 A comprehensive React application for managing, filtering, and organizing invoice data.
 
 **Key Features:**
@@ -26,6 +28,8 @@ npm run dev
 ---
 
 ## 2. Logistics Truck Route Visualizer
+
+Live Link: https://truck-route-visualizer-lac.vercel.app
 
 An interactive geographic visualization tracking a truck moving across a predefined delivery route (Origin -> D1 -> D2 -> D3).
 
